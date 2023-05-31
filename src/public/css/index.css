@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    align-items: stretch;
+    justify-content: stretch;
+    flex-wrap: wrap;
+    border: 1px solid black;
+}
+
+.prodBox {
+    padding: 15px;
+    margin: 15px;
+    width: 750px;
+    border: 1px solid black;
+    
+}
+
+.prodBox > div {
+    display: flex;
+    flex-flow: row nowrap;
+}

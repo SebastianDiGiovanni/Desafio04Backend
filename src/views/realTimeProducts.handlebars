@@ -1,0 +1,34 @@
+<div>
+    <header>
+        <h1>Product manager</h1>
+    </header>
+
+    <div class="container">
+        {{#if products }}
+            {{#each products}}
+            <div class="prodBox">
+                <div><span>ID: </span><p>{{id}}</p></div>
+                <div><span>Nombre: </span><p>{{title}}</p></div>
+                <div><span>Precio: </span><p>{{price}}</p></div>
+                <div><span>Descripcion: </span><p>{{description}}</p></div>
+                <div><span>Thumbnails: </span><p>{{thumbnails}}</p></div>
+                <div><span>Status: </span><p>{{status}}</p></div>
+                <div><span>Stock: </span><p>{{stock}}</p></div>
+            </div>  
+            {{/each}}
+        {{else}}
+            {{#each limitedProducts}}
+            <div class="prodBox">
+                <div><span>ID: </span><p>{{id}}</p></div>
+                <div><span>Nombre: </span><p>{{title}}</p></div>
+                <div><span>Precio: </span><p>{{price}}</p></div>
+                <div><span>Descripcion: </span><p>{{description}}</p></div>
+                <div><span>Thumbnails: </span><p>{{thumbnails}}</p></div>
+                <div><span>Status: </span><p>{{status}}</p></div>
+                <div><span>Stock: </span><p>{{stock}}</p></div>
+            </div>
+            {{/each}}
+        {{/if}}
+    </div>
+   
+</div>
